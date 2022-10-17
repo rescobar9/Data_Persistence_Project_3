@@ -8,7 +8,8 @@ using System.IO;
 using UnityEditor;
 #endif
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
     [SerializeField] Text bestScoreText;
     [SerializeField] InputField nameField;
@@ -72,7 +73,7 @@ public class GameManager : MonoBehaviour {
 #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
 #else
-        Application.Quit();
+    Application.Quit();
 #endif
     }
 
